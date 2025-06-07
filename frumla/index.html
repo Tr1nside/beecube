@@ -3,84 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <title>Responsive Image Component</title>
 </head>
 <body>
-<div class="background-img">
-    <div class="logo-container">
-        <img src="images/лого/куб%20левый.png" alt="Left Cube" class="cube left-cube">
-        <img src="images/лого/beecube%20only.png" alt="Main Image" class="main-image">
-        <img src="images/лого/куб%20правый.png" alt="Right Cube" class="cube right-cube">
-        <img src="images/лого/FRma.png" alt="Small Image" class="small-image">
-    </div>
-</div>
-
-<div class="page-container">
-    <div class="content-wrapper">
-        <div class="main-content">
-            <div class="background-layer"></div>
-            <h1 class="page-title">ИНФОРМАЦИЯ</h1>
-            <div class="server-description">
-                <p class="description-text description-main">
-                    BEECUBE - ВАНИЛЬНОЕ-РП ВЫЖИВАНИЕ С ЭЛЕМЕНТАМИ ПОЛИТИКИ, PVP,
-                    СТРОИТЕЛЬСТВА. ВЫ ПОЖЕТЕ СОЗДАВАТЬ ГОСУДАРСТВО, УЧАСТВОВАТЬ В
-                    ПОСТРОЙКЕ ГОРОДОВ, ВОЙНАХ, СУДАХ ИЛИ НАБЛЮДАТЬ ЗА СОБЫТИЯМИ ОТ
-                    ТРЕТЬЕГО ЛИЦА.
-                </p>
-                <p class="description-text description-additional">
-                    ВСЁ ЭТО РЕАЛИЗОВАНО НА НАШЕМ СЕРВЕРЕ БЕЗ ВСЯКИХ-ЛИБО МОДОВ.
-                </p>
+    <div class="container">
+        <div class="top-wrapper">
+            <div class="top-section">
+                <img src="./images/logo/left_cube.png" alt="" id="left_cube">
+                <img src="./images/logo/beecube.png" alt="">
+                <img src="./images/logo/right_cube.png" alt="" id="right_cube">
             </div>
-            <h2 class="links-title">ССЫЛКИ</h2>
-            <div class="discord-link">
-                <div alt="Discord Icon" class="social-icon dis-icon"></div>
-                <a href="https://discord.gg/7VVgXm7Ekc" class="discord-button social-button" target="_blank">DISCORD</a>
-            </div>
-            <div class="telegram-link">
-                <div alt="Telegram Icon" class="social-icon tel-icon"></div>
-                <a href="https://t.me/BeeCubeServer" class="telegram-button social-button" target="_blank">TELEGRAM</a>
-            </div>
-            <div class="youtube-link">
-                <div class="youtube-wrapper">
-                    <div alt="YouTube Icon" class="social-icon ytb-icon"></div>
-                    <a href="https://www.youtube.com/@СлоуМодус" class="youtube-button social-button" target="_blank">YOUTUBE</a>
+            <img src="./images/logo/FRma.png" alt="" class="logo-addns">
+        </div>
+        <div class="middle-section">
+            <div class="middle-inner"><h1 class="dark-text">ИНФОРМАЦИЯ</h1></div>
+            <div class="middle-main">
+                <div class="middle-info"><p>BEECUBE - ВАНИЛЬНОЕ-РП
+ВЫЖИВАНИЕ С ЭЛЕМЕНТАМИ
+ПОЛИТИКИ, РУР, СТРОИТЕЛЬСТВА.
+ВЫ ПОЖЕТЕ СОЗДАВАТЬ
+ГОСУДАРСТВО, УЧАСТВОВАТЬ В
+ПОСТРОЙКЕ ГОРОДОВ, ВОЙНАХ,
+СУДАХ ИЛИ НАБЛЮДАТЬ ЗА
+СОБЫТИЯМИ ОТ ТРЕТЬЕГО ЛИЦА.
+ВСЁ ЭТО РЕАЛИЗОВАНО НА НАШЕМ
+СЕРВЕРЕ БЕЗ ВСЯКИХ-ЛИБО МОДОВ.</p></div>
+                <div class="middle-contact">
+                    <p class="dark-text">ССЫЛКИ</p>
+                    <div class="contact" id="discord">
+                        <img src="./images/icon_soc/ds_ico.png" alt="" class="contact-icon">
+                        <p>DISCORD</p>
+                    </div>
+                    <div class="contact" id="tg">
+                        <img src="./images/icon_soc/tg_ico.png" alt="" class="contact-icon">
+                        <p>TELEGRAM</p>
+                    </div>
+                    <div class="contact" id="youtube">
+                        <img src="./images/icon_soc/yt_ico.png" alt="" class="contact-icon">
+                        <p>YOUTUBE</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-
-<main class="support-page">
-    <header class="page-header">
-        <h1 class="main-title">Поддержка/Донат</h1>
-        <h2 class="section-title">категории</h2>
-    </header>
-
-    <section class="categories-grid">
-        <div class="category-card music_block">
-            <div class="container-donate">
-                <img class="note note-behind" src="images/donate-btn/mus_block/нота1.png" alt="Нота 1">
-                <img class="note-block" src="images/donate-btn/mus_block/нотный%20блок.png" alt="Нотный блок">
-                <img class="note note-front" src="images/donate-btn/mus_block/нота2.png" alt="Нота 2">
+        <div class="second-section">
+            <div class="second-inner"><h1 class="dark-text">ПОДДЕРЖКА/ДОНАТ<br>КАТЕГОРИИ</h1></div>
+            <div class="categories-grid">
+                <div class="category">
+                    <div class="category-image">
+                        <img class="note note-behind" src="images/donate-btn/mus_block/нота1.png" alt="Нота 1" id="note-behind">
+                        <img class="note-block" src="images/donate-btn/mus_block/нотный%20блок.png" alt="Нотный блок" id="note-block">
+                        <img class="note note-front" src="images/donate-btn/mus_block/нота2.png" alt="Нота 2" id="note-front">
+                    </div>
+                    <div class="mus_text orange-text">Звук захода <br>на сервер</div>
+                </div>
+                <div class="category">
+                    <div class="category-image">
+                        <img src="images/donate-btn/color_block/розовый краситель.png" alt="Краситель 1" id="pink">
+                        <img src="images/donate-btn/color_block/ек.png" alt="Ек" id="ek">
+                        <img src="images/donate-btn/color_block/синий краситель.png" alt="Краситель 2" id="blue">
+                        <img src="images/donate-btn/color_block/ъап.png" alt="Ъап" id="ap">
+                    </div>
+                    <div class="card_text orange-text">Цветные<br>сообщения<br>в чате</div>
+                </div>
+                <div class="category">
+                    <div class="category-image">
+                        <img src="images/donate-btn/penis/Group 36.png" alt="right-sc" id="right-sc">
+                        <img src="images/donate-btn/penis/Group 37.png" alt="left-sc" id="left-sc">
+                        <img src="images/donate-btn/penis/Group 38.png" alt="zont" id="zont">
+                        <img src="images/donate-btn/penis/Group 39.png" alt="smile" id="smile">
+                    </div>
+                    <div class="card_text_2 orange-text">Префиксы</div>
+                </div>
             </div>
-            <!--                <img class="mus_text" src="images/donate-btn/mus_block/надпись.png" alt="надпись">-->
-            <div class="mus_text">Звук захода <br>на сервер</div>
-
         </div>
-        <div class="category-card color_block"></div>
-        <div class="category-card umbrella"></div>
-    </section>
-</main>
-
-<footer>
-    <div class="hero-container">
-        <img
-                src="images/низ.png"
-                class="hero-image"
-                alt="Hero image"
-        />
+        <div class="bottom-section">
+        </div>
     </div>
-</footer>
 </body>
 </html>
+

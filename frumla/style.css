@@ -1,0 +1,474 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE и Edge */
+}
+
+.container::-webkit-scrollbar {
+     display: none; /* Chrome, Safari, Opera */
+}
+
+body {
+    font-family: "Minecraft Ten font cyrillic", 'Segoe UI', Roboto, sans-serif;
+}
+
+h1 {
+    font-size: 3vw;
+}
+
+p {
+    font-size: 2vw;
+}
+
+.dark-text {
+    color: #37230e;
+}
+
+.orange-text {
+    color: #ff8300;
+}
+
+/* Main container */
+.container {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+    background-color: #d3941e;
+}
+
+/* Top wrapper - full screen with background image */
+.top-wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("images/logo/background.png");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Top section */
+.top-section {
+    flex-shrink: 0;
+    max-width: 100%;
+    /* background-color: #000000; */
+    height: 15vh;
+    width: 60vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-addns {
+    position: absolute;
+    padding-top: 6vh;
+    padding-right: 3vw;
+    width: 60vw;
+}
+
+#right_cube {
+    animation: floatAnimation1 7s ease-in-out infinite both;   
+}
+
+#left_cube {
+    animation: floatAnimation2 7.5s ease-in-out infinite both;   
+}
+
+/* Middle section */
+.middle-section {
+    margin-top: 40vh;
+    width: 100%;
+    max-width: 90vw;
+    max-height: 100vh;
+    padding-bottom: 90vh;
+    justify-content: space-between;
+    margin-bottom: 30vh;
+}
+
+.middle-inner {
+    display: flex;
+    flex-shrink: 0;
+    margin-bottom: 0;
+    height: 22vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.middle-info {
+    width: 60vw;
+    padding-left: 6vw;
+    padding-right: 6vw;
+}
+
+.middle-contact {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 6vh;
+}
+
+.contact {
+    display: flex;
+    justify-content: baseline;
+    cursor: pointer;
+}
+
+#discord:hover {
+    color: #5165f6;
+    transition: 0.3s ease;
+}
+
+#youtube:hover {
+    color: #ff0000;
+    transition: 0.3s ease;
+}
+
+#tg:hover {
+    color: #00abee;
+    transition: 0.3s ease;
+}
+
+.contact-icon {
+    width: 3vw;
+    height: 3vw;
+    margin-right: 1vw;
+}
+
+/* Second section */
+.second-section {
+    width: 100%;
+    max-width: 90vw;
+    margin-bottom: 20vh;
+    padding-bottom: 20vh;
+}
+
+.second-inner {
+    display: flex;
+    flex-shrink: 0;
+    margin-bottom: 0;
+    height: 22vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.categories-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 8vh;
+    /* gap: 9vw; */
+}
+
+.category {
+    background-color: #d9d9d9;
+    border-radius: 4vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    height: 50vh;
+    width: 18vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: "Minecraft Rus";
+    font-size: 4vh;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; /* Анимируем и scale, и тень */
+    transform-origin: center;
+}
+
+.category:hover {
+    cursor: pointer;
+    height: 52vh;
+    width: 19vw;
+    transform: scale(1.15);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Усиливаем тень */
+}
+
+.category-image {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card_text {
+    padding-top: 34vh;
+}
+
+.card_text_2 {
+    padding-top: 44vh;
+}
+
+#note-front {
+    position: absolute;
+    left: 10vw;
+    top: 10vh;
+    z-index: 110;
+    animation: floating 4s ease-in-out infinite;
+}
+
+#note-behind {
+    position: absolute;
+    left: -3.5vw;
+    bottom: 20vh;
+    z-index: 100;
+    animation: floating2 4s ease-in-out infinite;
+}
+
+#note-block {
+    padding-top: 3vh;
+    width: 15vw;
+    z-index: 105;
+}
+
+#pink {
+    position: absolute;
+    top: 3vh;
+    right: 0vw;
+    height: 7vw;
+    animation: floating 3s ease-in-out infinite;
+}
+
+#blue {
+    position: absolute;
+    top: 20vh;
+    right: 0vw;
+    height: 7vw;
+    animation: floating3 3s ease-in-out infinite;
+}
+
+#ek {
+    position: absolute;
+    top: 3vh;
+    left: -0.5vw;
+    height: 7vw;
+    animation: floating 3s ease-in-out infinite;
+}
+
+#ap {
+    position: absolute;
+    top: 19vh;
+    left: -2vw;
+    height: 6vw;
+    animation: floating2 3s ease-in-out infinite;
+}
+
+#right-sc {
+    position: absolute;
+    top: 7vh;
+    left: 2vw;
+    height: 4vw;
+    animation: floating 2s ease-in-out infinite;
+}
+
+#left-sc {
+    position: absolute;
+    top: 25vh;
+    right: 2vw;
+    height: 4vw;
+    animation: floating3 4s ease-in-out infinite;
+}
+
+#zont {
+    position: absolute;
+    top: 5vh;
+    right: 0vw;
+    height: 7vw;
+    animation: floating 5s ease-in-out infinite;
+}
+
+#smile {
+    position: absolute;
+    top: 21vh;
+    left: 1vw;
+    height: 6vw;
+    animation: floating2 3s ease-in-out infinite;
+}
+
+
+
+/* Bottom section */
+.bottom-section {
+    display: flex;
+    flex-shrink: 0;
+    align-self: stretch;
+    width: 100%;
+    height: 30vh;
+    background-image: url(./images/низ.png);
+    background-size: cover;
+}
+
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .container {
+        padding-top: 10vh;
+    }
+
+    .middle-section {
+        padding-bottom: 10vh;
+        margin-top: 4vh;
+        max-width: 100%;
+    }
+
+    .middle-inner {
+        margin-bottom: 1vh;
+        max-width: 100%;
+    }
+
+    .second-section {
+        padding-bottom: 10vh;
+        max-width: 100%;
+    }
+
+    .second-inner {
+        margin-bottom: 1vh;
+        max-width: 100%;
+    }
+}
+
+
+/* Animation */
+
+
+@keyframes floating2 {
+    0%, 100% {
+        transform: translateY(0) rotate(0.4deg); /* Лёгкий наклон */
+        opacity: 1;
+    }
+    25% {
+        transform: translateY(-13px) rotate(-0.6deg); /* Вверх + наклон влево */
+        opacity: 0.8;
+    }
+    50% {
+        transform: translateY(-8px) rotate(0.5deg); /* Опускается чуть ниже */
+        opacity: 1;
+    }
+    75% {
+        transform: translateY(-20px) rotate(-0.5deg); /* Максимальная высота */
+        opacity: 0.6;
+    }
+}
+
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0) rotate(0.5deg); /* Лёгкий наклон */
+    opacity: 0.6;
+  }
+  25% {
+    transform: translateY(-11px) rotate(-0.5deg); /* Вверх + наклон влево */
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-8px) rotate(0.5deg); /* Опускается чуть ниже */
+    opacity: 0.8;
+  }
+  75% {
+    transform: translateY(-15px) rotate(-0.5deg); /* Максимальная высота */
+    opacity: 0.6;
+  }
+}
+
+@keyframes floatAnimation1 {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg) translateX(0);
+        opacity: 0.9;
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    20% {
+        transform: translateY(-30px) rotate(2deg) translateX(-5px);
+        opacity: 0.95;
+        animation-timing-function: cubic-bezier(0.1, 0.3, 0.5, 1);
+    }
+    40% {
+        transform: translateY(-10px) rotate(-1deg) translateX(3px);
+        opacity: 0.87;
+        animation-timing-function: cubic-bezier(0.7, 0, 0.6, 0.2);
+    }
+    60% {
+        transform: translateY(-40px) rotate(3deg) translateX(-8px);
+        opacity: 0.93;
+        animation-timing-function: cubic-bezier(0.3, 0.1, 0.1, 1);
+    }
+    80% {
+        transform: translateY(-15px) rotate(-2deg) translateX(5px);
+        opacity: 0.85;
+        animation-timing-function: cubic-bezier(0.5, 0, 0.3, 0.8);
+    }
+}
+
+@keyframes floatAnimation2 {
+    0%, 100% {
+        transform: translateY(-10px) rotate(1deg) translateX(3px);
+        opacity: 0.88;
+        animation-timing-function: cubic-bezier(0.3, 0, 0.4, 1);
+    }
+    25% {
+        transform: translateY(-35px) rotate(-3deg) translateX(-6px);
+        opacity: 0.94;
+        animation-timing-function: cubic-bezier(0.1, 0.2, 0.6, 0.9);
+    }
+    50% {
+        transform: translateY(-5px) rotate(4deg) translateX(7px);
+        opacity: 0.82;
+        animation-timing-function: cubic-bezier(0.8, 0, 0.5, 0.3);
+    }
+    75% {
+        transform: translateY(-45px) rotate(-2deg) translateX(-10px);
+        opacity: 0.91;
+        animation-timing-function: cubic-bezier(0.2, 0.1, 0.1, 0.8);
+    }
+}
+
+@keyframes floating3 {
+    0%, 100% {
+        transform: translateY(0) rotate(0.4deg); /* Лёгкий наклон */
+        opacity: 1;
+    }
+    25% {
+        transform: translateY(-12px) rotate(-0.3deg); /* Вверх + наклон влево */
+        opacity: 0.8;
+    }
+    50% {
+        transform: translateY(-4px) rotate(-0.8deg); /* Опускается чуть ниже */
+        opacity: 1;
+    }
+    75% {
+        transform: translateY(-13px) rotate(0.5deg); /* Максимальная высота */
+        opacity: 0.6;
+    }
+}
+
+@keyframes floating4 {
+  0%, 100% {
+    transform: translateY(0) rotate(-0.5deg); /* Лёгкий наклон */
+    opacity: 0.6;
+  }
+  25% {
+    transform: translateY(-14px) rotate(0.5deg); /* Вверх + наклон влево */
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-6px) rotate(-0.5deg); /* Опускается чуть ниже */
+    opacity: 0.8;
+  }
+  75% {
+    transform: translateY(-18px) rotate(0.5deg); /* Максимальная высота */
+    opacity: 0.6;
+  }
+}
