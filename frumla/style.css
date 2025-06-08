@@ -79,16 +79,20 @@ p {
 }
 
 #right_cube {
+    width: 10vw;
+    height: 10vw;
     animation: floatAnimation1 14s ease-in-out infinite both;   
 }
 
 #left_cube {
+    width: 10vw;
+    height: 10vw;
     animation: floatAnimation2 16s ease-in-out infinite both;   
 }
 
 /* Middle section */
 .middle-section {
-    margin-top: 40vh;
+    margin-top: 10vh;
     width: 100%;
     max-width: 90vw;
     max-height: 100vh;
