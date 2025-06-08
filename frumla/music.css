@@ -36,6 +36,7 @@
 }
 
 .back-arrow{
+    margin-left: 2rem;
     width: 5rem;
     position: absolute;
     font-size: 4rem;

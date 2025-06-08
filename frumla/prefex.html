@@ -8,11 +8,12 @@
 </head>
 <body>
     <main class="main-container">
+        <a class="back-arrow" id="back-arrow" >&lt;-</a>
         <header class="hero-section">
             <div class="hero-content-wrapper">
                 <section class="hero-main-content">
-                    <div class="hero-header-bar">ПРЕФИКСЫ</div>
-                    <div class="hero-title-placeholder">ВЫБОР СТИЛЯ</div>
+                    <div class="hero-header-bar phenomenon">ПРЕФИКСЫ</div>
+                    <div class="hero-title-placeholder phenomenon">ВЫБОР СТИЛЯ</div>
                     <div class="hero-subtitle-placeholder">Всё по 25 рублей</div>
                 </section>
                 <section class="features-grid">
@@ -52,5 +53,28 @@
         </section>
     </main>
     <div class="bottom-section"></div>
+
+    <audio id="ArrowMus" src="images/music/звук кнопки для возврата на главную страницу.mp3" preload="auto"></audio>
+
+    <script>
+        function playSoundArrow() {
+            const sound = document.getElementById('ArrowMus');
+            sound.currentTime = 0; 
+            sound.play();
+        }
+
+        const button = document.getElementById('back-arrow');
+        const sound = document.getElementById('ArrowMus');
+        
+        button.addEventListener('click', function() {
+            sound.currentTime = 0;
+            sound.play()
+                .then(() => {
+                    setTimeout(() => {
+                        window.location.href = 'index.html';
+                    }, 200);
+                })
+        });
+    </script>
 </body>
 </html>

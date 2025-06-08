@@ -8,18 +8,18 @@
 </head>
 <body>
     <main class="main-container">
-        <a class="back-arrow" href="index.html">&lt;-</a>
+        <a class="back-arrow" id="back-arrow">&lt;-</a>
         <header class="hero-section">
             <div class="hero-content-wrapper">
                 <section class="hero-main-content">
                     <div class="hero-header-bar phenomenon">ЗВУКИ ВХОДА</div>
                     <div class="hero-title-placeholder phenomenon">ВЫБОР СТИЛЯ</div>
-                    <div class="hero-subtitle-placeholder phenomenon">Наведитесь чтобы услышать звук</div>
+                    <div class="hero-subtitle-placeholder phenomenon">Нажмите чтобы услышать звук</div>
                 </section>
                 <section class="features-grid">
-                    <article class="feature-card" onmouseenter="playSoundOp()"><img src="images/music_web/опыт/фулл.png" alt=""></article>
-                    <article class="feature-card" onmouseenter="playSoundBee()"><img src="images/music_web/пчела/фулл.png" alt=""></article>
-                    <article class="feature-card" onmouseenter="playSoundMaic()"><img src="images/music_web/маяк/фулл.png" alt=""></article>
+                    <article class="feature-card" id="op_btn"><img src="images/music_web/опыт/фулл.png" alt=""></article>
+                    <article class="feature-card" id="bee_btn"><img src="images/music_web/пчела/фулл.png" alt=""></article>
+                    <article class="feature-card" id="maic_btn"><img src="images/music_web/маяк/фулл.png" alt=""></article>
                 </section>
             </div>
         </header>
@@ -47,26 +47,53 @@
     </main>
     <div class="bottom-section"></div>
 
-    <audio id="OpitMus" src="images/music/звук опыта.mp3" preload="auto"></audio>
-    <audio id="beeMus" src="images/music/звук пчелы.mp3" preload="auto"></audio>
-    <audio id="MaicMus" src="images/music/маяк.mp3" preload="auto"></audio>
+    <audio id="ArrowMus" preload="auto"> <source src="images/music/звук кнопки для возврата на главную страницу.mp3" type="audio/mpeg"></audio>
+    <audio id="OpitMus" preload="auto"><source src="images/music/звук опыта.mp3" type="audio/mpeg"></audio>
+    <audio id="beeMus" preload="auto"><source src="images/music/звук пчелы.mp3" type="audio/mpeg"></audio>
+    <audio id="MaicMus"  preload="auto"><source src="images/music/маяк.mp3" type="audio/mpeg"></audio>
+    
 
     <script>
-        function playSoundOp() {
-            const sound = document.getElementById('OpitMus');
-            sound.currentTime = 0;
-            sound.play();
-        }
-        function playSoundBee() {
-            const sound = document.getElementById('beeMus');
-            sound.currentTime = 0;
-            sound.play();
-        }
-        function playSoundMaic() {
-            const sound = document.getElementById('MaicMus');
-            sound.currentTime = 0; 
-            sound.play();
-        }
+        
+        const button_back = document.getElementById('back-arrow');
+        const sound_back = document.getElementById('ArrowMus');
+
+        const btn_op = document.getElementById('op_btn');
+        const sound_op = document.getElementById('OpitMus');
+
+        const btn_bee = document.getElementById('bee_btn');bee_btn
+        const sound_bee = document.getElementById('beeMus');
+
+        const btn_maic = document.getElementById('maic_btn');maic_btn
+        const sound_maic = document.getElementById('MaicMus');
+
+        
+
+        button_back.addEventListener('click', function() {
+            sound_back.currentTime = 0;
+            sound_back.play()
+                .then(() => {
+                    setTimeout(() => {
+                        window.location.href = 'index.html';
+                    }, 300);
+                })
+        });
+
+        btn_op.addEventListener('click', function() {
+            sound_op.currentTime = 0;
+            sound_op.play()
+        });
+
+        btn_bee.addEventListener('click', function() {
+            sound_bee.currentTime = 0;
+            sound_bee.play()
+        });
+
+        btn_maic.addEventListener('click', function() {
+            sound_maic.currentTime = 0;
+            sound_maic.play()
+        });
+        
     </script>
 </body>
 </html>
