@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Component</title>
+    <link rel="stylesheet" href="music.css">
+</head>
+<body>
+    <main class="main-container">
+        <a class="back-arrow" href="index.html">&lt;-</a>
+        <header class="hero-section">
+            <div class="hero-content-wrapper">
+                <section class="hero-main-content">
+                    <div class="hero-header-bar phenomenon">ЗВУКИ ВХОДА</div>
+                    <div class="hero-title-placeholder phenomenon">ВЫБОР СТИЛЯ</div>
+                    <div class="hero-subtitle-placeholder phenomenon">Наведитесь чтобы услышать звук</div>
+                </section>
+                <section class="features-grid">
+                    <article class="feature-card" onmouseenter="playSoundOp()"><img src="images/music_web/опыт/фулл.png" alt=""></article>
+                    <article class="feature-card" onmouseenter="playSoundBee()"><img src="images/music_web/пчела/фулл.png" alt=""></article>
+                    <article class="feature-card" onmouseenter="playSoundMaic()"><img src="images/music_web/маяк/фулл.png" alt=""></article>
+                </section>
+            </div>
+        </header>
+        <section class="content-section">
+            <div class="content-wrapper">
+                <div class="two-column-layout">
+                    <div class="left-column">
+                        <div class="left-column-content">
+                            <div class="left-header-placeholder">СПАСИБО ЗА ПОКУПКИ!</div>
+                            <div class="left-content-placeholder">Ваша покупка звука
+                                продлевает хостинг всем
+                                нам на 72 часа, 144 часа, и
+                                на 216 часов!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-column">
+                        <div class="right-column-content">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="bottom-section"></div>
+
+    <audio id="OpitMus" src="images/music/звук опыта.mp3" preload="auto"></audio>
+    <audio id="beeMus" src="images/music/звук пчелы.mp3" preload="auto"></audio>
+    <audio id="MaicMus" src="images/music/маяк.mp3" preload="auto"></audio>
+
+    <script>
+        function playSoundOp() {
+            const sound = document.getElementById('OpitMus');
+            sound.currentTime = 0;
+            sound.play();
+        }
+        function playSoundBee() {
+            const sound = document.getElementById('beeMus');
+            sound.currentTime = 0;
+            sound.play();
+        }
+        function playSoundMaic() {
+            const sound = document.getElementById('MaicMus');
+            sound.currentTime = 0; 
+            sound.play();
+        }
+    </script>
+</body>
+</html>
+
