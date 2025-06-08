@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Minecraft Ten font cyrillic;
+    color: aliceblue;
+}
+.main-container {
+    background-color: rgb(211,148,30);
+    width: 100%;
+    padding-bottom: 5.75rem;
+    overflow: hidden;
+}
+@media (max-width: 61.9375rem) {
+    .main-container {
+        max-width: 100%;
+    }
+}
+.phenomenon {
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.4;
+        transform: translateY(-10px);
+    }
+    50% {
+        opacity: 0.8;
+        transform: translateY(-5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.back-arrow{
+    width: 5rem;
+    position: absolute;
+    font-size: 4rem;
+    text-decoration: none;
+}
+
+.hero-section {
+    background-image: url(images/Фон.png);
+    background-size: cover;
+    display: flex;
+    padding: 11rem 5rem 0.3125rem 5rem;
+    flex-direction: column;
+    align-items: center;
+}
+@media (max-width: 61.9375rem) {
+    .hero-section {
+        max-width: 100%;
+        padding: 6.25rem 1.25rem 0.3125rem 1.25rem;
+    }
+}
+
+.hero-content-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 102.375rem;
+    flex-direction: column;
+    align-items: stretch;
+}
+@media (max-width: 61.9375rem) {
+    .hero-content-wrapper {
+        max-width: 100%;
+    }
+}
+
+.hero-main-content {
+    align-self: center;
+    display: flex;
+    width: 57.75rem;
+    max-width: 100%;
+    height: 40rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-header-bar {
+    color: aliceblue;
+    font-size: 8ch;
+    text-align: center;
+    align-self: stretch;
+    z-index: 10;
+    flex-shrink: 0;
+    height: 8.1875rem;
+}
+@media (max-width: 61.9375rem) {
+    .hero-header-bar {
+        max-width: 100%;
+    }
+}
+
+.hero-title-placeholder {
+    font-size: 5ch;
+    color: rgba(255,142,0);
+    text-align: center;
+    margin-top: 4.8125rem;
+    width: 43.75rem;
+    flex-shrink: 0;
+    max-width: 100%;
+    height: 5.0625rem;
+}
+@media (max-width: 61.9375rem) {
+    .hero-title-placeholder {
+        margin-top: 2.5rem;
+    }
+}
+
+.hero-subtitle-placeholder {
+    margin-top: 28rem;
+    font-size: 2ch;
+    color: aliceblue;
+    text-align: center;
+    width: 45.875rem;
+    flex-shrink: 0;
+    max-width: 100%;
+    height: 4.4375rem;
+}
+
+.features-grid {
+    display: flex;
+    margin-top: 10.1875rem;
+    align-items: stretch;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media (max-width: 61.9375rem) {
+    .features-grid {
+        max-width: 100%;
+        margin-top: 2.5rem;
+    }
+}
+
+.feature-card {
+    display: flex;
+    width: 20rem;
+    flex-shrink: 0;
+    max-width: 100%;
+    height: 23rem;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+}
+
+.feature-card:hover {
+    transform: scale(1.10);
+}
+
+.content-section {
+    display: flex;
+    margin-top: 12.375rem;
+    width: 100%;
+    padding-left: 5rem;
+    flex-direction: column;
+    align-items: stretch;
+}
+@media (max-width: 61.9375rem) {
+    .content-section {
+        max-width: 100%;
+        padding-left: 1.25rem;
+        margin-top: 2.5rem;
+    }
+}
+
+.content-wrapper {
+}
+@media (max-width: 61.9375rem) {
+    .content-wrapper {
+        max-width: 100%;
+    }
+}
+
+.two-column-layout {
+    gap: 1.25rem;
+    display: flex;
+}
+@media (max-width: 61.9375rem) {
+    .two-column-layout {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    line-height: normal;
+    width: 50%;
+    margin-left: 0;
+}
+@media (max-width: 61.9375rem) {
+    .left-column {
+        width: 100%;
+    }
+}
+
+.left-column-content {
+    flex-grow: 1;
+}
+@media (max-width: 61.9375rem) {
+    .left-column-content {
+        max-width: 100%;
+        margin-top: 2.5rem;
+    }
+}
+
+.left-header-placeholder {
+    font-size: 3vw;
+    display: flex;
+    flex-shrink: 0;
+    height: 6.875rem;
+}
+@media (max-width: 61.9375rem) {
+    .left-header-placeholder {
+        max-width: 100%;
+    }
+}
+
+.left-content-placeholder {
+    padding-top: 2vh;
+    font-family: Minecraft Rus;
+    font-size: 2vw;
+    display: flex;
+    width: 56.75rem;
+    flex-shrink: 0;
+    max-width: 100%;
+    height: 12.1875rem;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    line-height: normal;
+    width: 50%;
+    margin-left: 1.25rem;
+}
+@media (max-width: 61.9375rem) {
+    .right-column {
+        width: 100%;
+    }
+}
+
+.right-column-content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+@media (max-width: 61.9375rem) {
+    .right-column-content {
+        max-width: 100%;
+        margin-top: 2.5rem;
+    }
+}
+
+.right-header-placeholder {
+    font-size: 3vw;
+    align-self: center;
+    display: flex;
+    margin-left: 1.375rem;
+    width: 40.375rem;
+    flex-shrink: 0;
+    max-width: 100%;
+    height: 5.125rem;
+}
+
+.right-content-placeholder {
+    padding-top: 2vh;
+    font-size: 2vw;
+    font-family: Minecraft Rus;
+    display: flex;
+    margin-top: 1.75rem;
+    flex-shrink: 0;
+    height: 9.25rem;
+}
+@media (max-width: 61.9375rem) {
+    .right-content-placeholder {
+        max-width: 100%;
+    }
+}
+
+.footer-placeholder {
+    align-self: center;
+    display: flex;
+    margin-top: 25vh;
+    width: 33.875rem;
+    flex-shrink: 0;
+    max-width: 100%;
+    height: 1.8125rem;
+}
+@media (max-width: 61.9375rem) {
+    .footer-placeholder {
+        margin-top: 2.5rem;
+    }
+}
+
+.bottom-section {
+    display: flex;
+    flex-shrink: 0;
+    align-self: stretch;
+    width: 100%;
+    height: 30vh;
+    background-image: url(./images/низ.png);
+    background-size: cover;
+}
