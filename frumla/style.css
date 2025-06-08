@@ -79,11 +79,11 @@ p {
 }
 
 #right_cube {
-    animation: floatAnimation1 7s ease-in-out infinite both;   
+    animation: floatAnimation1 14s ease-in-out infinite both;   
 }
 
 #left_cube {
-    animation: floatAnimation2 7.5s ease-in-out infinite both;   
+    animation: floatAnimation2 16s ease-in-out infinite both;   
 }
 
 /* Middle section */
@@ -224,7 +224,7 @@ p {
     left: 10vw;
     top: 10vh;
     z-index: 110;
-    animation: floating 4s ease-in-out infinite;
+    animation: floating 8s ease-in-out infinite;
 }
 
 #note-behind {
@@ -232,7 +232,7 @@ p {
     left: -3.5vw;
     bottom: 20vh;
     z-index: 100;
-    animation: floating2 4s ease-in-out infinite;
+    animation: floating2 8s ease-in-out infinite;
 }
 
 #note-block {
@@ -246,7 +246,7 @@ p {
     top: 3vh;
     right: 0vw;
     height: 7vw;
-    animation: floating 3s ease-in-out infinite;
+    animation: floating 6s ease-in-out infinite;
 }
 
 #blue {
@@ -254,7 +254,7 @@ p {
     top: 20vh;
     right: 0vw;
     height: 7vw;
-    animation: floating3 3s ease-in-out infinite;
+    animation: floating3 6s ease-in-out infinite;
 }
 
 #ek {
@@ -262,7 +262,7 @@ p {
     top: 3vh;
     left: -0.5vw;
     height: 7vw;
-    animation: floating 3s ease-in-out infinite;
+    animation: floating 6s ease-in-out infinite;
 }
 
 #ap {
@@ -270,7 +270,7 @@ p {
     top: 19vh;
     left: -2vw;
     height: 6vw;
-    animation: floating2 3s ease-in-out infinite;
+    animation: floating2 6s ease-in-out infinite;
 }
 
 #right-sc {
@@ -278,7 +278,7 @@ p {
     top: 7vh;
     left: 2vw;
     height: 4vw;
-    animation: floating 2s ease-in-out infinite;
+    animation: floating 4s ease-in-out infinite;
 }
 
 #left-sc {
@@ -286,7 +286,7 @@ p {
     top: 25vh;
     right: 2vw;
     height: 4vw;
-    animation: floating3 4s ease-in-out infinite;
+    animation: floating3 8s ease-in-out infinite;
 }
 
 #zont {
@@ -294,7 +294,7 @@ p {
     top: 5vh;
     right: 0vw;
     height: 7vw;
-    animation: floating 5s ease-in-out infinite;
+    animation: floating 10s ease-in-out infinite;
 }
 
 #smile {
@@ -302,7 +302,7 @@ p {
     top: 21vh;
     left: 1vw;
     height: 6vw;
-    animation: floating2 3s ease-in-out infinite;
+    animation: floating2 6s ease-in-out infinite;
 }
 
 
