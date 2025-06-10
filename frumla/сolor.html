@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Component</title>
+    <link rel="stylesheet" href="сolor.css">
+</head>
+<body>
+    <main class="main-container">
+        <a class="back-arrow" id="back-arrow" >&lt;-</a>
+        <header class="hero-section">
+            <div class="hero-content-wrapper">
+                <section class="hero-main-content">
+                    <div class="hero-header-bar phenomenon">ЦВЕТНЫЕ СООБЩЕНИЯ</div>
+                    <div class="hero-title-placeholder phenomenon">ВЫБОР СТИЛЯ</div>
+                    <div class="hero-subtitle-placeholder"></div>
+                </section>
+                <section class="features-grid">
+                    <article class="feature-card">
+                        <img src="images/color/зеленый/фон.png" alt="">
+                        <img src="images/color/зеленый/краситель.png" alt="" id="color">
+                        <div class="color-text green-text">Зелёный</div>
+                    </article>
+                    <article class="feature-card">
+                        <img src="images/color/жёлтый/фон.png" alt="">
+                        <img src="images/color/жёлтый/краситель.png" alt="" id="color">
+                        <div class="color-text yellow-text">Жёлтый</div>
+                    </article>
+                    <article class="feature-card">
+                        <img src="images/color/красный/фон.png" alt="">
+                        <img src="images/color/красный/краситель.png" alt="" id="color">
+                        <div class="color-text red-text">Красный</div>
+                    </article>
+                    <article class="feature-card">
+                        <img src="images/color/фиолетовый/фон.png" alt="">
+                        <img src="images/color/фиолетовый/краситель.png" alt="" id="color">
+                        <div class="color-text violet-text">Фиолетовый</div>
+                    </article>
+                    <article class="feature-card">
+                        <img src="images/color/бирюзовый/фон.png" alt="">
+                        <img src="images/color/бирюзовый/краситель.png" alt="" id="color">
+                        <div class="color-text turquoise-text">Бирюзовый</div>
+                    </article>
+                </section>
+            </div>
+        </header>
+        <section class="content-section">
+            <div class="content-wrapper">
+                <div class="two-column-layout">
+                    <div class="left-column">
+                        <div class="left-column-content">
+                            <div class="left-header-placeholder">СПАСИБО ЗА ПОКУПКИ!</div>
+                            <div class="left-content-placeholder">Ваша покупка звука
+                                продлевает хостинг всем
+                                нам на 72 часа, 144 часа, и
+                                на 216 часов!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-column">
+                        <div class="right-column-content">
+                            <div class="right-header-placeholder">ЦЕНА:</div>
+                            <div class="right-content-placeholder">
+                                <div style="white-space: nowrap;">&lt;Frumlaya&gt;<span class="green-text">50 рубасав</span></div>
+                                <div style="white-space: nowrap;">&lt;Frumlaya&gt;<span class="yellow-text">50 рубасав</span></div>
+                                <div style="white-space: nowrap;">&lt;Frumlaya&gt;<span class="red-text">100 рубасав</span></div>
+                                <div style="white-space: nowrap;">&lt;Frumlaya&gt;<span class="violet-text">100 рубасав</span></div>
+                                <div style="white-space: nowrap;">&lt;Frumlaya&gt;<span class="turquoise-text">150 рубасав</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer-placeholder"></footer>
+        </section>
+    </main>
+    <div class="bottom-section"></div>
+
+    <audio id="ArrowMus" src="images/music/звук кнопки для возврата на главную страницу.mp3" preload="auto"></audio>
+
+    <script>
+        function playSoundArrow() {
+            const sound = document.getElementById('ArrowMus');
+            sound.currentTime = 0; 
+            sound.play();
+        }
+
+        const button = document.getElementById('back-arrow');
+        const sound = document.getElementById('ArrowMus');
+        
+        button.addEventListener('click', function() {
+            sound.currentTime = 0;
+            sound.play()
+                .then(() => {
+                    setTimeout(() => {
+                        window.location.href = 'index.html';
+                    }, 200);
+                })
+        });
+    </script>
+</body>
+</html>
