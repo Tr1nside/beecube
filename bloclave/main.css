@@ -1,4 +1,5 @@
 * {
+    color: white;
     font-family: "Manrope", sans-serif;
     margin: 0;
     padding: 0;
@@ -10,7 +11,6 @@
 .container::-webkit-scrollbar {
      display: none; /* Chrome, Safari, Opera */
 }
-
 
 body {
     background-image: url(./img/main/background.png);
@@ -55,6 +55,25 @@ body {
     padding-left: 3vw;
     height: 100vh;
     padding-top: 4vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.donates-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.donates {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3vh;
+    padding-left: 1vw;
+}
+
+.contacts-container {
+    display: flex;
+    flex-direction: row;
 }
 
 .contact-donate-block {
@@ -62,5 +81,91 @@ body {
     background-size: cover;
     width: 25vw;
     height: 60vh;
+}
 
+.service-card {
+    display: flex;
+    width: 25vw;
+    height: 21.15vh;
+    background-color: aliceblue;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+    align-items: center;
+    font-size: 3vw;
+    justify-content: center;
+}
+
+#prefix {
+    background-image: url(img/main/card1.png);
+    background-size: cover;
+}
+
+#mes-color {
+    background-image: url(img/main/card2.png);
+    background-size: cover;
+}
+
+#discord {
+    background-image: url(img/main/card3.png);
+    background-size: cover;
+}
+
+#telegram {
+    background-image: url(img/main/card4.png);
+    background-size: cover;
+}
+
+#youtube {
+    background-image: url(img/main/card5.png);
+    background-size: cover;
+}
+
+/* hover */
+#prefix:hover {
+    background-image: url(img/main/card12.png);
+    background-size: cover;
+}
+
+#mes-color:hover {
+    background-image: url(img/main/card22.png);
+    background-size: cover;
+}
+
+#discord:hover {
+    background-image: url(img/main/card32.png);
+    background-size: cover;
+}
+
+#telegram:hover {
+    background-image: url(img/main/card42.png);
+    background-size: cover;
+}
+
+#youtube:hover {
+    background-image: url(img/main/card52.png);
+    background-size: cover;
+}
+
+/* ========= */
+.footer {
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    gap: 2vh;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+.contact-telegram:hover {
+    color: #24adf3;
+}
+
+.contact-discord:hover {
+    color: #5561f5;
 }
