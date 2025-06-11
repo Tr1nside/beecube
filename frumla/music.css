@@ -41,6 +41,7 @@
     position: absolute;
     font-size: 4rem;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .hero-section {

@@ -199,7 +199,7 @@
 
 .left-content-placeholder {
     padding-top: 2vh;
-    font-family: Minecraft Rus NEW;
+    font-family: Minecraft Rus;
     font-size: 2vw;
     display: flex;
     width: 56.75rem;
@@ -291,6 +291,7 @@
     position: absolute;
     font-size: 4rem;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .phenomenon {

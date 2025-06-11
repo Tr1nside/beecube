@@ -56,12 +56,12 @@
 
 .hero-header-bar {
     color: aliceblue;
-    font-size: 8ch;
+    font-size: 5vw;
     text-align: center;
-    align-self: stretch;
     z-index: 10;
     flex-shrink: 0;
     height: 8.1875rem;
+    white-space: nowrap;
 }
 @media (max-width: 61.9375rem) {
     .hero-header-bar {
@@ -112,53 +112,14 @@
 }
 
 .feature-card {
-    width: 17rem;
+    display: flex;
+    width: 20rem;
     flex-shrink: 0;
     max-width: 100%;
-    height: 17rem;
+    height: 23rem;
     transition: transform 0.3s ease;
     transform-origin: center;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
-
-#color {
-    position: absolute;
-    top: 2vh;
-    z-index: 1;
-    animation: floating 6s ease-in-out infinite;
-}
-
-.color-text{
-    padding-top: 24vh;
-    z-index: 2;
-    right: 12vh;
-    position: absolute;
-}
-
-.green-text{
-    color:green;
-}
-
-.yellow-text{
-    color:yellow;
-}
-
-.red-text{
-    color:red;
-}
-
-.violet-text{
-    color:violet;
-}
-
-.turquoise-text{
-    color:turquoise;
-}
-
-
 
 .feature-card:hover {
     transform: scale(1.10);
@@ -238,7 +199,7 @@
 
 .left-content-placeholder {
     padding-top: 2vh;
-    font-family: Minecraft Rus NEW;
+    font-family: Minecraft Rus;
     font-size: 2vw;
     display: flex;
     width: 56.75rem;
@@ -282,10 +243,11 @@
     flex-shrink: 0;
     max-width: 100%;
     height: 5.125rem;
+    justify-content: center;
+    padding-right: 4vw;
 }
 
-.right-content-placeholder div{
-    margin-bottom: 5px;
+.right-content-placeholder {
     padding-top: 2vh;
     font-size: 2vw;
     font-family: Minecraft Rus;
@@ -293,6 +255,7 @@
     margin-top: 1.75rem;
     flex-shrink: 0;
     height: 9.25rem;
+    flex-direction: column;
 }
 @media (max-width: 61.9375rem) {
     .right-content-placeholder {
@@ -331,6 +294,7 @@
     position: absolute;
     font-size: 4rem;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .phenomenon {
@@ -352,21 +316,41 @@
     }
 }
 
-@keyframes floating {
-  0%, 100% {
-    transform: translateY(0) rotate(0.5deg); /* Лёгкий наклон */
-    opacity: 0.6;
-  }
-  25% {
-    transform: translateY(-11px) rotate(-0.5deg); /* Вверх + наклон влево */
-    opacity: 1;
-  }
-  50% {
-    transform: translateY(-8px) rotate(0.5deg); /* Опускается чуть ниже */
-    opacity: 0.8;
-  }
-  75% {
-    transform: translateY(-15px) rotate(-0.5deg); /* Максимальная высота */
-    opacity: 0.6;
-  }
+
+.prewie {
+    font-family: Minecraft Rus;
+}
+.prewie-p {
+    padding-left: 8vw;
+    font-family: Minecraft Rus;
+}
+
+.green {
+    color: #2acc1d;
+}
+.yellow {
+    color: #f2e21c;
+}
+.orange {
+    color: #ed5c3d;
+}
+.purple {
+    color: #c81585;
+}
+.blue {
+    color: #21a099;
+}
+
+.color-card {
+    width: 10vw;
+    height: 15vw;
+    border-radius: 2vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.color-obj {
+    width: 8vw;
 }
